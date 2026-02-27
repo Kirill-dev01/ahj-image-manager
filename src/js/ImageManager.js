@@ -66,9 +66,9 @@ export default class ImageManager {
                 URL.revokeObjectURL(img.src); // Очищаем память, удаляя временную ссылку
             });
 
-            previewItem.appendChild(img);
-            previewItem.appendChild(deleteBtn);
-            this.previewContainer.appendChild(previewItem);
+            previewItem.append(img);
+            previewItem.append(deleteBtn);
+            this.previewContainer.append(previewItem);
         });
     }
 }
